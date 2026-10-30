@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "world_x_app",
+  "author": "Jobusu",
+  "version": "0.0.1",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "dev:api": "npm run dev -w @world_x_app/api",
+    "clean:api": "npm run clean -w @world_x_app/api",
+    "build:api": "npm run build -w @world_x_app/api",
+    "start:api": "npm run start -w @world_x_app/api",
+    "dev:web": "npm run dev -w @world_x_app/web",
+    "build:web": "npm run build -w @world_x_app/web",
+    "build": "npm run build:web && npm run build:api",
+    "start": "npm run start:api"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/shared"
+  ]
+}

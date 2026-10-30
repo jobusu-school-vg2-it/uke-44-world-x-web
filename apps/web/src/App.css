@@ -1,0 +1,108 @@
+.country-header {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        color: var(--text);
+    }
+
+    h1 {
+        color: var(--text-h);
+    }
+}
+
+main {
+    margin: auto;
+    margin-top: 1rem;
+
+    width: 800px;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.country-wrapper {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .country-search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        input {
+            color: var(--text);
+
+            border: 1px solid var(--border);
+            border-radius: 4px;
+
+            font-size: 1rem;
+            padding: 0.25rem 0.5rem;
+            width: 400px;
+        }
+
+        .country-search-results {
+            border: 1px solid var(--border);
+            border-radius: 4px;
+
+            width: 400px;
+            padding: 0.5rem 0.5rem;
+
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+    }
+}
+
+.country-search-item {
+    display: flex;
+}
+
+.cities-wrapper {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .cities-list {
+        width: 400px;
+
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.city-wrapper {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.25rem 0.5rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        .label {
+            color: var(--text);
+        }
+
+        .value {
+            color: var(--text-h);
+            font-weight: 600;
+        }
+    }
+}
